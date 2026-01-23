@@ -124,4 +124,9 @@ if __name__ == "__main__":
     
     # Start Bot (Polling)
     print("Python Bot Started...")
+    try:
+        bot.remove_webhook()
+    except Exception as e:
+        print(f"Warning: Failed to remove webhook (might be already removed): {e}")
+        
     bot.infinity_polling()
