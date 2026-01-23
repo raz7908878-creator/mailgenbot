@@ -39,7 +39,7 @@ def send_welcome(message):
         f"<b>Welcome {name}!</b>\n\n"
         "Commands:\n"
         "/create [username] - Create single inbox\n"
-        "/bulk [qty] - Create random inboxes (Max 50)\n"
+        "/bulk [qty] - Create random inboxes (Max 100)\n"
         "/stats - View your usage"
     )
     bot.reply_to(message, msg, parse_mode='HTML')
@@ -130,3 +130,4 @@ if __name__ == "__main__":
         print(f"Warning: Failed to remove webhook (might be already removed): {e}")
         
     bot.infinity_polling()
+
