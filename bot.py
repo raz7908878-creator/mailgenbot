@@ -9,7 +9,7 @@ import string
 
 # --- CONFIGURATION ---
 # 1. Get from Environment Variables (Render)
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '8463257593:AAHU5DnPgJSXxc7ddx0-tP7nMpuRBUrBi1E')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8326263008:AAG6BX7mItLRCOoMrZ6DYnYFZ2bjvd0tlf0')
 API_URL = 'https://srfigservices.online/api.php'
 API_PASSWORD = os.environ.get('API_PASSWORD', '908878')
 
@@ -130,5 +130,6 @@ if __name__ == "__main__":
         print(f"Warning: Failed to remove webhook (might be already removed): {e}")
         
     bot.infinity_polling()
+
 
 
